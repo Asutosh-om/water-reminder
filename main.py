@@ -7,7 +7,7 @@ from threading import *
 
 
 class Student:
-    def _init_(self, root):
+    def __init__(self, root):
         # ==> Main Body of Root and Title <==
         self.root = root
         self.flag = False
@@ -72,7 +72,7 @@ class Student:
             messagebox.showwarning("Activated", "Notification Already Activated")
 
     def StartNotify(self):
-        if _name_ == "_main_":
+        if __name__ == "__main__":
             self.flag_another = True
             print(self.flag)
             while self.flag:
